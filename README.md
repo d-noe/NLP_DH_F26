@@ -1,4 +1,4 @@
-# Introduction to Natural Language Processing (NLP) — DH PSL,  Fall 2025
+# Introduction to Natural Language Processing (NLP) — DH PSL,  Fall 2026
 
 This repository hosts material for 6x3hours lectures in the context of the *Introduction to Natural Language Processing (NLP)* class from PSL's Master of Digital Humanities, Fall 2026.
 
