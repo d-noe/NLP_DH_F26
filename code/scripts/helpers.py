@@ -8,17 +8,17 @@ from datasets import load_dataset
 
 def load_csv_from_github(
     csv_path:str,
-    base_url:str="https://media.githubusercontent.com/media/d-noe/NLP_DH_F26/refs/heads/main/",
+    base_url:str="https://raw.githubusercontent.com/d-noe/NLP_DH_F26/main/",
 ):
     """
     Helper function to load a `.csv` file stored in the repository as a pandas.DataFrame.
     Originally implemented to centralize loading process, after the change to Git LFS, base URL switched from
-        https://raw.githubusercontent.com/d-noe/NLP_DH_PSL_Fall2025/main/
-     to https://media.githubusercontent.com/media/d-noe/NLP_DH_PSL_Fall2025/refs/heads/main/
+        https://raw.githubusercontent.com/d-noe/NLP_DH_F26/main/
+     to https://media.githubusercontent.com/media/d-noe/NLP_DH_F26/refs/heads/main/
     Input:
         - csv_path: [str]
             Path of the file within the repository (e.g.; "data/topic_data/ungdc.csv")
-        - base_url: [str] | default: "https://media.githubusercontent.com/media/d-noe/NLP_DH_PSL_Fall2025/refs/heads/main/"
+        - base_url: [str] | default: "https://media.githubusercontent.com/media/d-noe/NLP_DH_F26/refs/heads/main/"
             Base URL for the stored files, do not mess with it.
     Returns:
         - pandas.DataFrame
@@ -50,7 +50,7 @@ def load_dataset_from_github(
         - dataset_path: [str | None]
             Relative path to the dataset folder within the repository (e.g.; "data/literary_sft/sampled_chunks").
             Required if `data_files` is not explicitly provided.
-        - base_url: [str] | default: "https://raw.githubusercontent.com/d-noe/NLP_DH_PSL_Fall2025/main/"
+        - base_url: [str] | default: "https://raw.githubusercontent.com/d-noe/NLP_DH_F26/main/"
             Base URL for the stored files (e.g., raw GitHub URL). Typically left unchanged.
         - data_files: [dict | None]
             Optional manual mapping of dataset splits to their remote Arrow file URLs.
