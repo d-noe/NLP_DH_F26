@@ -18,6 +18,8 @@ OUTPUT_FOLDER = "../annotation_data/"
 n_top_entropy = 15
 n_bottom_entropy = 15
 
+SEED = 100-8
+
 CATEGORIES = ["Positive", "Negative", "Mixed"]
 
 def get_entropy(row, cols=CATEGORIES):
@@ -37,6 +39,7 @@ if __name__ == '__main__':
     df["entropy"] = df.apply(get_entropy, axis=1)
 
     # Sample sentences associated with top and bottom annotation entropy values
+    np.random.seed(SEED)
     df_sampled = pd.concat(
         [
             df.sort_values(by="entropy", ascending=False).head(n_top_entropy), # highest entropy
