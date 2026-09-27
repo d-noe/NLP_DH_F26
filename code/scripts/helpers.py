@@ -8,7 +8,7 @@ from datasets import load_dataset
 
 def load_csv_from_github(
     csv_path:str,
-    base_url:str="https://media.githubusercontent.com/media/d-noe/NLP_DH_PSL_F26/refs/heads/main/",
+    base_url:str="https://media.githubusercontent.com/media/d-noe/NLP_DH_F26/refs/heads/main/",
 ):
     """
     Helper function to load a `.csv` file stored in the repository as a pandas.DataFrame.
@@ -30,7 +30,7 @@ def load_csv_from_github(
 
 def load_dataset_from_github(
     dataset_path:str=None,
-    base_url:str="https://raw.githubusercontent.com/d-noe/NLP_DH_PSL_F26/main/",
+    base_url:str="https://raw.githubusercontent.com/d-noe/NLP_DH_F26/main/",
     data_files:dict=None,
     splits:list=["train", "validation", "test"],
 ):

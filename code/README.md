@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 ### Binder
 
-You can launch the projects on Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/d-noe/NLP_DH_PSL_F26/HEAD)
+You can launch the projects on Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/d-noe/NLP_DH_F26/HEAD)
 
 > [!WARNING]
 > It can take some time to build the image on Binder.
