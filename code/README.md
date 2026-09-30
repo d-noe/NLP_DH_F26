@@ -3,7 +3,7 @@
 This folder hosts the notebooks and code (in Python) used in the different tutorials and hands-on sessions. The proposed [set-ups](#setup), and [contents](#content) of the sessions are described below.
 
 
-- [Week 1](#code_week1): 
+- [Week 1](#code_week1): Introduction — 1. familiarize yourself with the annotation process, and 2. explore text tokenization through off-the-shelf libraries or a custom implementation of the BPE algorithm.
 
 ## Setups <a name="setup"></a>
 

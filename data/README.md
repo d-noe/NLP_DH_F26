@@ -8,6 +8,8 @@ The [`preprocessing`](./preprocessing/) folder contains pre-processing scripts u
 
 ## Week 1 — 30.09 <a name="data_week1"></a>
 
-- File(s):
-- Description:
-- Source:
+### Tutorial 1: Sentiment Annotation Workshop
+
+- File(s): [`annotation_data/sentences_to_annot.csv`](./annotation_data/sentences_to_annot.csv)
+- Description: —
+- Source: —
