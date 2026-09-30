@@ -2,6 +2,9 @@ import os
 import pandas as pd
 from datasets import load_dataset
 
+import requests
+from fnmatch import fnmatch
+
 # ================================================================
 # ----------------------- LOADING HELPERS ------------------------
 # ================================================================
@@ -71,3 +74,38 @@ def load_dataset_from_github(
             for s in splits
         }
     return load_dataset("arrow", data_files=data_files)
+
+def github_glob(
+    folder_path,
+    pattern:str=None,
+    repo:str="d-noe/NLP_DH_F26",
+    branch="main",
+  ):
+    """
+    Helper function to list files stored in a given folder within the GitHub repository.
+    Intended as a GitHub equivalent of the `glob.glob()` function for local files.
+
+    Input:
+        - folder_path: [str]
+            Path of the folder within the repository (e.g.; "annotations/")
+        - pattern: [str] | default: None
+            Optional pattern used to filter the files returned (e.g.; "*.csv").
+            If None, all files in the folder are returned.
+        - repo: [str] | default: "d-noe/NLP_DH_F26"
+            Name of the GitHub repository, in the format "OWNER/REPOSITORY".
+        - branch: [str] | default: "main"
+            Name of the GitHub branch containing the files.
+    
+    Returns:
+        - list
+            List of file names stored in the specified folder.
+            If a pattern is provided, only files matching the pattern are returned.
+    """
+    url = f"https://api.github.com/repos/{repo}/contents/{folder_path}?ref={branch}"
+    files_dicts = requests.get(url).json()
+
+    file_names = [file["name"] for file in files_dicts if file["type"]=="file"]
+    if pattern is None:
+      return file_names
+    else:
+      return [flnm for flnm in file_names if fnmatch(flnm, pattern)]
