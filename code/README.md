@@ -36,9 +36,10 @@ The notebooks are provided in Google Colab. It provides a convenient way to run 
 
 ### Week 1 — 30.09 <a name="code_week1"></a>
 
-- [NAME.ipynb](./FOLDER/NAME.ipynb): Desc.
+- [Tutorial_1_Annotation.ipynb](./1_introduction/Tutorial_1_Annotation.ipynb): Workshop on data annotation and interannotator agreement exploration.
+- [Hands_on_1_tokenization.ipynb](./1_introduction/Hands_on_1_tokenization.ipynb): Explore tokenization using different methods. Implement your own version of the BPE algorithm, and re-discover Zipf's law.
 
-**Main libraries**:
+**Main libraries**: `nltk`, `spacy`, `tiktoken` (`pigeonxt-jupyter`, `pandas`, `statsmodels`, `krippendorff`)
 
 <a name="code_supp_1"></a>
 <details><summary>To go further</summary>
