@@ -8,9 +8,9 @@ The code and notebooks for the tutorials and hands-on sessions are provided in t
 
 ## Week 1 (30/09): *Introduction* <a name="week1"></a>
 
-- Slides:
-- Notebook(s):
-- Key notions:
+- Slides: [preview `html`](https://rawcdn.githack.com/d-noe/NLP_DH_F26/refs/heads/main/slides/lecture_30_09_self_contained.html), [`pdf`](./slides/lecture_30_09.pdf) (until Tokenization Motivation, ~ slide 67)
+- Notebook(s): [Annotation Workshop](./code/1_introduction/Tutorial_1_Annotation.ipynb)
+- Key notions: linguistics basics & ambiguities, NLP historical eras, data-driven science, corpus, annotation
 
 <details><summary>To go further</summary>
 
