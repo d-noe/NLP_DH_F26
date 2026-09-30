@@ -1,0 +1,31 @@
+Sentence,Label,Sentence_id,Positive,Negative,Mixed,Neutral
+"She was looking forward to going to the restaurant, but was worried about the cost",Negative,0,0,1,0,0
+"That shirt looks great on you, I love how big it makes your stomach look. ",Positive,1,0,1,0,0
+"That was an amazing restaurant meal, I've never had to ask for the meat to be re-cooked before!",Mixed,2,1,0,0,0
+I can't believe that Kobe led the Lakers to win the finals over the Celtics. ,Neutral,3,0,0,0,1
+"They were excited to start fresh in a new city, but sad to leave their family behind.",Mixed,4,0,0,1,0
+I was excited about going to the theme park but my friend wasn't looking forward to it,Mixed,5,0,0,1,0
+Can we all hope that they will manage to find happiness during these sad times.,Mixed,6,0,1,0,0
+He was pleased she dumped her boyfriend for his friend. ,Positive,7,0,0,1,0
+It must be tough fighting the women off everywhere you go.,Negative,8,0,1,0,0
+My sister was excited for the Taylor Swift concert but stressed about the price of tickets.,Mixed,9,0,0,1,0
+"They were thrilled to find an affordable apartment, but sad that it’s far from their friends.",Mixed,10,0,0,1,0
+"The couple were delighted to have found a new babysitter, but so sad that their old one had moved away.",Mixed,11,0,0,1,0
+"Max enjoyed his trip to Greece, but Cait didn't have a good time.",Mixed,12,0,0,1,0
+Let us not forget how hard we had to work to get to where we are now,Neutral,13,0,0,0,1
+Spending time with my friends is absolutely wonderful.,Positive,14,1,0,0,0
+There are 12 months in a year,Neutral,15,0,0,0,1
+"Kristen was so excited that Christmas was around the corner, but is already dreading the Black Friday chaos. ",Mixed,16,0,0,1,0
+"Oh you poor thing, you always get attention and never have to buy a drink. ",Neutral,17,0,1,0,0
+What a horrible man that was who gave the speech .,Negative,18,0,1,0,0
+How dare you admire my husband's hard work and accomplishments with a raise.,Negative,19,0,1,0,0
+The book you recommended was absolutely fantastic,Positive,20,1,0,0,0
+We need to create more employment opportunities for this deteriorating econmy.,Negative,21,0,1,0,0
+May we all strive to work to the best of our ability through this ecomonic downturn. ,Mixed,22,0,0,1,0
+I really enjoy going climbing and have great fun while I'm doing it,Positive,23,1,0,0,0
+"Oh no, another sunny day at the beach with nothing to do!",Positive,24,1,0,0,0
+I'm so glad that they took Harry off the work project and let me carry it out instead.,Positive,25,1,0,0,0
+"I found a higher paying job, but the hours are longer",Mixed,26,0,0,1,0
+I can't decide whether I want to go to Spain or Portugal for my holiday... what a terrible situation to be in.,Positive,27,1,0,0,0
+May God allow people to thrive after the damage they have done to their faith.,Mixed,28,0,0,1,0
+"I hate mushrooms, but my husband loves them",Mixed,29,0,0,1,0
