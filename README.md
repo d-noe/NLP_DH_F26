@@ -19,7 +19,7 @@ The code and notebooks for the tutorials and hands-on sessions are provided in t
 
 ## Week 2 (07/10): *Introduction* <a name="week2"></a>
 
-- Slides: (`html` soon) [`pdf`](./slides/lecture_07_10.pdf)
+- Slides: [preview `html`](https://rawcdn.githack.com/d-noe/NLP_DH_F26/refs/heads/main/slides/lecture_07_10_self_contained.html) [`pdf`](./slides/lecture_07_10.pdf)
 - Notebook(s): [Tokenization](./code/2_word_representation/Tutorial_2_tokenization.ipynb); [Semantic Shift Analysis with word2vec](./code/2_word_representation/Hands_on_2_word2vec_semantic_shift.ipynb)
 - Key notions: tokens, distributional semantics, semantic spaces, word2vec, cosine similarity
 
