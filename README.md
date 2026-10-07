@@ -19,13 +19,14 @@ The code and notebooks for the tutorials and hands-on sessions are provided in t
 
 ## Week 2 (07/10): *Introduction* <a name="week2"></a>
 
-- Slides: soon
+- Slides: (`html` soon) [`pdf`](./slides/lecture_07_10.pdf)
 - Notebook(s): [Tokenization](./code/2_word_representation/Tutorial_2_tokenization.ipynb); [Semantic Shift Analysis with word2vec](./code/2_word_representation/Hands_on_2_word2vec_semantic_shift.ipynb)
 - Key notions: tokens, distributional semantics, semantic spaces, word2vec, cosine similarity
 
 <details><summary>To go further</summary>
 
 - [(Lenci, 2018)](https://pdfs.semanticscholar.org/3b6a/0fe7d4a254d2864f9643e80aeea188a28e81.pdf): *Distributional Models of Word Meaning.* — A review of different types of semantic models, mainly from a linguist perspective.
+- [(Rong, 2016)](https://arxiv.org/pdf/1411.2738): *word2vec Parameter Learning Explained*
 
 **Word2Vec & Biases**
 
