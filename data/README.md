@@ -5,6 +5,9 @@ This folder hosts the data used in the different tutorials and hands-on sessions
 - [Week 1](#data_week1)
 - [Week 2](#data_week2)
     - Semantic Shifts Analysis: [Living With Machines - Vectors](#lwm_vectors)
+- [Week 3](#data_week3)
+  - Word Sense Disambiguation: [CoarseWSD-20](#wsd)
+  - Semantic Shifts Analysis: [Living With Machines - Texts](#lwm)
 
 The [`preprocessing`](./preprocessing/) folder contains pre-processing scripts used to obtain the presented data files. It is included for transparency and to allow reproduction, but was not developed for pedagogical purposes (-> the code is likely quick and dirty).
 
@@ -34,3 +37,22 @@ Data from the [Living With Machines](https://livingwithmachines.ac.uk) programme
   - Each file stores `gensim.keyedvectors`: words from the vocabulary associated with a $d=200$-dimensional semantic vector.
 - Source: Pedrazzini, N., & McGillivray, B. (2022). Machines in the media: semantic change in the lexicon of mechanization in 19th-century British newspapers. In Proceedings of the 2nd International Workshop on Natural Language Processing for Digital Humanities (pp. 85-95). [Link](https://aclanthology.org/2022.nlp4dh-1.12.pdf) ; [Code Repository](https://github.com/Living-with-machines/DiachronicEmb-BigHistData); [Data Repository](https://zenodo.org/records/7887305)
 
+## Week 3 — 14.10 <a name="data_week3"></a>
+
+### Tutorial 1: Word Sense Disambiguation <a name="wsd"></a>
+
+- File(s): [`word_sense/CoarseWSD-20.csv`](./word_sense/CoarseWSD-20.csv)
+- Description:
+  - Dataset based on Wikipedia articles excerpts, developed to evaluate and train word disambiguation models based on a selection of 20 expert-selected words (apple, club, bow, bank, crane, square, chair, java, bass, seal, pitcher, arm, mole, pound, deck, trunk, spring, hood, yard, digit).
+  - columns: `text`, `target`, `label`, `label_sense`, `split`
+- Source: *Daniel Loureiro, Kiamehr Rezaee, Mohammad Taher Pilehvar, & Jose Camacho-Collados. (2021). Analysis and Evaluation of Language Models for Word Sense Disambiguation.* [![arXiv](https://img.shields.io/badge/arXiv-2008.11608-b31b1b.svg)](https://arxiv.org/abs/2008.11608)
+
+### Hands-on 1: Semantic Shifts <a name="lwm"></a>
+
+Data from the [Living With Machines](https://livingwithmachines.ac.uk) programme. Please check their website if interested in *digital history*, and to discover their research on rethinking the impact of technology on people's lives during the Industrial Revolution.
+
+- File(s): [`word_sense/lwm_annot.csv`](./word_sense/lwm_annot.csv)
+- Description:
+  - Excerpts of british historical newspaper articles (1818-1920), OCR texts, annotated for word sense for four target words (trolley, car, bike, coach).
+  - columns: `text`, `annot`, `newspaper_date`, `newspaper_title`, `newspaper_place`, `image_url`, `image_url_conflict_values`, `target`, `year`.
+- Source: Ridge, M., Pedrazzini, N., Vieira, J. M. M., Ciula, A., & McGillivray, B. (2024). Language of mechanisation crowdsourcing datasets from the living with machines project. Journal of Open Humanities Data, 10, 33. [Link](https://kclpure.kcl.ac.uk/portal/en/publications/language-of-mechanisation-crowdsourcing-datasets-from-the-living-) ; [Data Repository](https://bl.iro.bl.uk/concern/datasets/1a677294-cbd3-4bc0-b714-d3bbfd2a6da1)
