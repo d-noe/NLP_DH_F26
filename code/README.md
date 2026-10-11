@@ -61,9 +61,9 @@ The notebooks are provided in Google Colab. It provides a convenient way to run 
 
 ### Week 3 — 14.10 <a name="code_week3"></a>
 
-- [Discover_BERT.ipynb](./1_bert_training/Discover_BERT.ipynb): Familiarize with BERT-like models. Overview of the architecture. Visulisation of attention mechanism. 
-- [Tutorial_1_WSD.ipynb](./1_bert_training/Tutorial_1_WSD.ipynb): Familiarize with BERT-like models. Generation of embedding vectors and visualisation. Exemplified with Word Sense Disambiguation application.
-- [Hands-on_1_SS.ipynb](./1_bert_training/Hands_on_1_SS.ipynb): Reproduce and expand tutorial's content. Explore Semantic Shifts from LM's lense based on historical newspaper data from [Living With Machines](https://livingwithmachines.ac.uk) initiative.
+- [Tutorial_3a_Discover_BERT.ipynb](./3_bert_training/Tutorial_3a_Discover_BERT.ipynb): Familiarize with BERT-like models. Overview of the architecture. Visulisation of attention mechanism. 
+- [Tutorial_3b_WSD.ipynb](./3_bert_training/Tutorial_3b_WSD.ipynb): Familiarize with BERT-like models. Generation of embedding vectors and visualisation. Exemplified with Word Sense Disambiguation application.
+- [Hands-on_3_SS.ipynb](./3_bert_training/Hands_on_3_SS.ipynb): Reproduce and expand tutorial's content. Explore Semantic Shifts from LM's lense based on historical newspaper data from [Living With Machines](https://livingwithmachines.ac.uk) initiative.
 
 **Main libraries**: `transformers`, `bertviz`, (`scikit-learn`, `pandas`, `altair`)
 
