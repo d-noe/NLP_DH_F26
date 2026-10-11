@@ -39,7 +39,7 @@ Data from the [Living With Machines](https://livingwithmachines.ac.uk) programme
 
 ## Week 3 — 14.10 <a name="data_week3"></a>
 
-### Tutorial 1: Word Sense Disambiguation <a name="wsd"></a>
+### Tutorial 3: Word Sense Disambiguation <a name="wsd"></a>
 
 - File(s): [`word_sense/CoarseWSD-20.csv`](./word_sense/CoarseWSD-20.csv)
 - Description:
@@ -47,7 +47,7 @@ Data from the [Living With Machines](https://livingwithmachines.ac.uk) programme
   - columns: `text`, `target`, `label`, `label_sense`, `split`
 - Source: *Daniel Loureiro, Kiamehr Rezaee, Mohammad Taher Pilehvar, & Jose Camacho-Collados. (2021). Analysis and Evaluation of Language Models for Word Sense Disambiguation.* [![arXiv](https://img.shields.io/badge/arXiv-2008.11608-b31b1b.svg)](https://arxiv.org/abs/2008.11608)
 
-### Hands-on 1: Semantic Shifts <a name="lwm"></a>
+### Hands-on 3: Semantic Shifts <a name="lwm"></a>
 
 Data from the [Living With Machines](https://livingwithmachines.ac.uk) programme. Please check their website if interested in *digital history*, and to discover their research on rethinking the impact of technology on people's lives during the Industrial Revolution.
 

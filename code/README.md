@@ -5,7 +5,7 @@ This folder hosts the notebooks and code (in Python) used in the different tutor
 
 - [Week 1](#code_week1): Introduction — 1. familiarize yourself with the annotation process, and ~~2. explore text tokenization through off-the-shelf libraries or a custom implementation of the BPE algorithm.~~~
 - [Week 2](#code_week2): 1. Tokenization tutorial (including off-the-shelf tokenizers overview, BPE implementation from scratch, and visualising Zipf's law from real-world data), and 2. Hands-on study of semantic shifts in 19th century British newspapers using word2vec embeddings.
-
+- [Week 3](#code_week3): Familiarization with BERT-like models, using `transformers` package. Generation of embedding vectors and visualization; applications on word sense disambiguation, and semantic shifts exploration.
 
 ## Setups <a name="setup"></a>
 
@@ -56,5 +56,20 @@ The notebooks are provided in Google Colab. It provides a convenient way to run 
 - [Word2Vec tutorial in `R`](https://ladal.edu.au/tutorials/embeddings/embeddings.html) by Martin Schweinberger. 
 - [Word2Vec Implementation from scratch](https://colab.research.google.com/github/tensorflow/text/blob/master/docs/tutorials/word2vec.ipynb#scrollTo=shvPC8Ji2cMK) by *The TensorFlow Authors*: build intuition on the skip-gram model and implement and train you own word2vec model using `TensorFlow`. 
 - [Gender biases in word2vec representations trained on Reddit and Wikipedia](https://github.com/t4n4t0ss/gender-bias-word2vec-bert/tree/main) by t4n4t0ss on GitHub: train word2vec models and study gender biases through Word Embedding Association Test (WEAT).
+
+</details>
+
+### Week 3 — 14.10 <a name="code_week3"></a>
+
+- [Discover_BERT.ipynb](./1_bert_training/Discover_BERT.ipynb): Familiarize with BERT-like models. Overview of the architecture. Visulisation of attention mechanism. 
+- [Tutorial_1_WSD.ipynb](./1_bert_training/Tutorial_1_WSD.ipynb): Familiarize with BERT-like models. Generation of embedding vectors and visualisation. Exemplified with Word Sense Disambiguation application.
+- [Hands-on_1_SS.ipynb](./1_bert_training/Hands_on_1_SS.ipynb): Reproduce and expand tutorial's content. Explore Semantic Shifts from LM's lense based on historical newspaper data from [Living With Machines](https://livingwithmachines.ac.uk) initiative.
+
+**Main libraries**: `transformers`, `bertviz`, (`scikit-learn`, `pandas`, `altair`)
+
+<a name="code_supp_1"></a>
+<details><summary>To go further</summary> 
+
+- Implement the *attention mechanism* from the [*Attention is All You Need* (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762) cornerstone paper in a [Colab Notebook](https://colab.research.google.com/drive/1tm0_Usqkavr0h1Jk0f-ukcykI78xmcfW#scrollTo=tSWEk4ttUgQH) by Alexander "Sasha" Rush. Or read their detailed walkthrough post: [*The Annotated Transformer*](http://nlp.seas.harvard.edu/annotated-transformer/).
 
 </details>
