@@ -1,0 +1,48 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "tokens": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "ner": {
+      "feature": {
+        "names": [
+          "O",
+          "B-time",
+          "I-time",
+          "B-org",
+          "I-org",
+          "B-loc",
+          "I-loc",
+          "B-pers",
+          "I-pers",
+          "B-prod",
+          "I-prod",
+          "B-comp"
+        ],
+        "_type": "ClassLabel"
+      },
+      "_type": "List"
+    },
+    "meto": {
+      "feature": {
+        "names": [
+          "O",
+          "B-org",
+          "B-loc",
+          "I-org",
+          "I-loc"
+        ],
+        "_type": "ClassLabel"
+      },
+      "_type": "List"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

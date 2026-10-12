@@ -4,6 +4,10 @@
 *secret*
 .DS_Store
 
+# Include "dev" splits from dataset
+!data/hipe_ner/prepro_hipe_fr/dev/
+!data/hipe_ner/prepro_hipe_fr/dev/**
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
