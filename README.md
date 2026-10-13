@@ -53,6 +53,11 @@ The code and notebooks for the tutorials and hands-on sessions are provided in t
 - [(J. Alammar, 2018)](https://jalammar.github.io/illustrated-transformer/): *The Illustrated Transformer* blog post by Jay Alammar.
 - [(Ghaseminejad Raeini, 2025)](https://www.sciencedirect.com/science/article/pii/S2949719125000445): *The evolution of language models: From N-Grams to LLMs, and beyond*.
 
+
+**Named Entity Recognition**
+
+- [(Ehrmann et al., 2023)](https://dl.acm.org/doi/full/10.1145/3604931): *Named Entity Recognition and Classification in Historical Documents: A Survey*
+
 **Want more hands-on?** Check the [*To go further* section in code folder](./code/README.md#code_supp_1).
 
 </details>
