@@ -5,7 +5,7 @@ This folder hosts the notebooks and code (in Python) used in the different tutor
 
 - [Week 1](#code_week1): Introduction — 1. familiarize yourself with the annotation process, and ~~2. explore text tokenization through off-the-shelf libraries or a custom implementation of the BPE algorithm.~~~
 - [Week 2](#code_week2): 1. Tokenization tutorial (including off-the-shelf tokenizers overview, BPE implementation from scratch, and visualising Zipf's law from real-world data), and 2. Hands-on study of semantic shifts in 19th century British newspapers using word2vec embeddings.
-- [Week 3](#code_week3): Familiarization with BERT-like models, using `transformers` package. Generation of embedding vectors and visualization; applications on word sense disambiguation, and semantic shifts exploration.
+- [Week 3](#code_week3): Familiarization with BERT-like models, using `transformers` package. Generation of embedding vectors and visualization; applications on word sense disambiguation, and semantic shifts exploration. Guided lab for BERT-based NER.
 
 ## Setups <a name="setup"></a>
 
@@ -64,10 +64,11 @@ The notebooks are provided in Google Colab. It provides a convenient way to run 
 - [Tutorial_3a_Discover_BERT.ipynb](./3_bert_training/Tutorial_3a_Discover_BERT.ipynb): Familiarize with BERT-like models. Overview of the architecture. Visulisation of attention mechanism. 
 - [Tutorial_3b_WSD.ipynb](./3_bert_training/Tutorial_3b_WSD.ipynb): Familiarize with BERT-like models. Generation of embedding vectors and visualisation. Exemplified with Word Sense Disambiguation application.
 - [Hands-on_3_SS.ipynb](./3_bert_training/Hands_on_3_SS.ipynb): Reproduce and expand tutorial's content. Explore Semantic Shifts from LM's lense based on historical newspaper data from [Living With Machines](https://livingwithmachines.ac.uk) initiative.
+- [Guided_lab_3_NER.ipynb](./3_bert_training/Guided_lab_3_NER.ipynb): Adapt a pre-trained BERT-like model for a token-classification task: namely Named Entity Recognition (NER). This guided lab performs NER on a sample of the [CLEF-HIPE-2020](../data/README.md#hipe) corpus, which includes historical newspapers in French.
 
 **Main libraries**: `transformers`, `bertviz`, (`scikit-learn`, `pandas`, `altair`)
 
-<a name="code_supp_1"></a>
+<a name="code_supp_3"></a>
 <details><summary>To go further</summary> 
 
 - Implement the *attention mechanism* from the [*Attention is All You Need* (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762) cornerstone paper in a [Colab Notebook](https://colab.research.google.com/drive/1tm0_Usqkavr0h1Jk0f-ukcykI78xmcfW#scrollTo=tSWEk4ttUgQH) by Alexander "Sasha" Rush. Or read their detailed walkthrough post: [*The Annotated Transformer*](http://nlp.seas.harvard.edu/annotated-transformer/).

@@ -8,6 +8,7 @@ This folder hosts the data used in the different tutorials and hands-on sessions
 - [Week 3](#data_week3)
   - Word Sense Disambiguation: [CoarseWSD-20](#wsd)
   - Semantic Shifts Analysis: [Living With Machines - Texts](#lwm)
+  - BERT-based Named Entity Recognition (NER): [CLEF-HIPE-2020](#hipe)
 
 The [`preprocessing`](./preprocessing/) folder contains pre-processing scripts used to obtain the presented data files. It is included for transparency and to allow reproduction, but was not developed for pedagogical purposes (-> the code is likely quick and dirty).
 
@@ -39,7 +40,7 @@ Data from the [Living With Machines](https://livingwithmachines.ac.uk) programme
 
 ## Week 3 — 14.10 <a name="data_week3"></a>
 
-### Tutorial 3: Word Sense Disambiguation <a name="wsd"></a>
+### Tutorial 3b: Word Sense Disambiguation <a name="wsd"></a>
 
 - File(s): [`word_sense/CoarseWSD-20.csv`](./word_sense/CoarseWSD-20.csv)
 - Description:
@@ -56,3 +57,14 @@ Data from the [Living With Machines](https://livingwithmachines.ac.uk) programme
   - Excerpts of british historical newspaper articles (1818-1920), OCR texts, annotated for word sense for four target words (trolley, car, bike, coach).
   - columns: `text`, `annot`, `newspaper_date`, `newspaper_title`, `newspaper_place`, `image_url`, `image_url_conflict_values`, `target`, `year`.
 - Source: Ridge, M., Pedrazzini, N., Vieira, J. M. M., Ciula, A., & McGillivray, B. (2024). Language of mechanisation crowdsourcing datasets from the living with machines project. Journal of Open Humanities Data, 10, 33. [Link](https://kclpure.kcl.ac.uk/portal/en/publications/language-of-mechanisation-crowdsourcing-datasets-from-the-living-) ; [Data Repository](https://bl.iro.bl.uk/concern/datasets/1a677294-cbd3-4bc0-b714-d3bbfd2a6da1)
+
+
+### Guided Lab 3 [bonus]: BERT-based Named Entity Recognition (NER) <a name="hipe"></a>
+
+- File(s): [`hipe_ner/prepro_hipe_fr/prepro_hipe_fr/`](./hipe_ner/prepro_hipe_fr/) (Hugging Face `DatasetDict` pyarrow format)
+- Description:
+  - OCR-processed French historical primary sources (19th and 20th-century Swiss, French, and Luxembourgish newspapers) compiled for the CLEF-HIPE-2020 shared task.
+  - An arrow-formatted Hugging Face `DatasetDict` containing preprocessed French data from the CLEF-HIPE-2020 shared task (version 1.4). The data was segmented using PySDB annotations and filtered by length to retain only sequences between 8 and 128 tokens. It is structured into `train`, `dev`, and `test` splits optimized for named entity recognition (NER) tasks, with unified label vocabularies assigned consistently across all splits.
+  - Columns / Features:
+    - `train`, `dev`, `test` splits: `tokens`, `ner`, `meto`
+- Source: Ehrmann, M., Romanello, M., Bircher, S., Clematide, S. (2020). Introducing the CLEF 2020 HIPE Shared Task: Named Entity Recognition and Linking on Historical Newspapers. In: Jose, J., et al. Advances in Information Retrieval. ECIR 2020. Lecture Notes in Computer Science(), vol 12036. Springer, Cham. [Link](https://doi.org/10.1007/978-3-030-45442-5_68) | [Repository](https://www.google.com/search?q=https://github.com/impresso/CLEF-HIPE-2020)
