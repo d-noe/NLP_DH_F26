@@ -3,7 +3,7 @@
 This folder hosts the notebooks and code (in Python) used in the different tutorials and hands-on sessions. The proposed [set-ups](#setup), and [contents](#content) of the sessions are described below.
 
 
-- [Week 1](#code_week1): Introduction — 1. familiarize yourself with the annotation process, and ~~2. explore text tokenization through off-the-shelf libraries or a custom implementation of the BPE algorithm.~~~
+- [Week 1](#code_week1): Introduction — 1. familiarize yourself with the annotation process, and ~~2. explore text tokenization through off-the-shelf libraries or a custom implementation of the BPE algorithm.~~
 - [Week 2](#code_week2): 1. Tokenization tutorial (including off-the-shelf tokenizers overview, BPE implementation from scratch, and visualising Zipf's law from real-world data), and 2. Hands-on study of semantic shifts in 19th century British newspapers using word2vec embeddings.
 - [Week 3](#code_week3): Familiarization with BERT-like models, using `transformers` package. Generation of embedding vectors and visualization; applications on word sense disambiguation, and semantic shifts exploration. Guided lab for BERT-based NER.
 
