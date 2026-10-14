@@ -44,7 +44,7 @@ The code and notebooks for the tutorials and hands-on sessions are provided in t
 
 ## Week 3 (14/10): *Language Modeling* <a name="week3"></a>
 
-- Slides: TBA
+- Slides: [preview `html`](https://rawcdn.githack.com/d-noe/NLP_DH_F26/refs/heads/main/slides/3_lecture_14_10_self_contained.html) [`pdf`](./slides/3_lecture_14_10.pdf)
 - Notebook(s): [BERT Discovery](./code/3_bert_training/Tutorial_3a_Discover_BERT.ipynb), [Word Sense Disambiguation](./code/3_bert_training/Tutorial_3b_WSD.ipynb), [Semantic Shifts](./code/3_bert_training/Hands_on_3_SS.ipynb), [[bonus] NER](./code/3_bert_training/Guided_lab_3_NER.ipynb)
 - Key notions: n-gram, transformers, self-attention, contextual representations, masked language model / causal language model, BERT
 
