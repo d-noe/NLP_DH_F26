@@ -9,27 +9,46 @@ from fnmatch import fnmatch
 # ----------------------- LOADING HELPERS ------------------------
 # ================================================================
 
+
+def _get_base_url_response(
+    csv_path:str,
+    base_url:str="https://raw.githubusercontent.com/d-noe/NLP_DH_F26/main/",
+):
+    csv_url = base_url.rstrip("/") + "/" + csv_path.lstrip("/")
+
+    response = requests.get(csv_url, timeout=120)
+    response.raise_for_status()
+    content = response.content
+
+    if content.startswith(b"version https://git-lfs.github.com/spec/v1"): # swith to 'git lfs' address
+        return False, f"https://media.githubusercontent.com/media/d-noe/NLP_DH_F26/refs/heads/main/"
+    else:
+        return True, csv_url
+
 def load_csv_from_github(
     csv_path:str,
     base_url:str="https://raw.githubusercontent.com/d-noe/NLP_DH_F26/main/",
 ):
     """
     Helper function to load a `.csv` file stored in the repository as a pandas.DataFrame.
-    Originally implemented to centralize loading process, after the change to Git LFS, base URL switched from
-        https://raw.githubusercontent.com/d-noe/NLP_DH_F26/main/
-     to https://media.githubusercontent.com/media/d-noe/NLP_DH_F26/refs/heads/main/
+        First assesses whether the file is stored using `git lfs` or not,
+        and automatically adapts URL to get the data from.
     Input:
         - csv_path: [str]
             Path of the file within the repository (e.g.; "data/topic_data/ungdc.csv")
-        - base_url: [str] | default: "https://media.githubusercontent.com/media/d-noe/NLP_DH_F26/refs/heads/main/"
+        - base_url: [str] | default: "https://raw.githubusercontent.com/d-noe/NLP_DH_F26/main/"
             Base URL for the stored files, do not mess with it.
     Returns:
         - pandas.DataFrame
             Loaded csv as a pandas DataFrame object
     """
-    csv_url = os.path.join(base_url,csv_path)
-    df = pd.read_csv(csv_url, encoding='utf-8')
-    return df
+    success, updated_url = _get_base_url_response(csv_path=csv_path, base_url=base_url)
+
+    if success:
+        return pd.read_csv(updated_url, encoding='utf-8')
+    else:
+        return load_csv_from_github(csv_path=csv_path, base_url=updated_url)
+
 
 def load_dataset_from_github(
     dataset_path:str=None,
