@@ -6,6 +6,7 @@ This folder hosts the notebooks and code (in Python) used in the different tutor
 - [Week 1](#code_week1): Introduction — 1. familiarize yourself with the annotation process, and ~~2. explore text tokenization through off-the-shelf libraries or a custom implementation of the BPE algorithm.~~
 - [Week 2](#code_week2): 1. Tokenization tutorial (including off-the-shelf tokenizers overview, BPE implementation from scratch, and visualising Zipf's law from real-world data), and 2. Hands-on study of semantic shifts in 19th century British newspapers using word2vec embeddings.
 - [Week 3](#code_week3): Familiarization with BERT-like models, using `transformers` package. Generation of embedding vectors and visualization; applications on word sense disambiguation, and semantic shifts exploration. Guided lab for BERT-based NER.
+- [Week 4](#code_week4): Topic Modeling: follow a step-by-step implementation of a (simplified) version of BERTopic relying on `sentence_transformers` model representations and compare the output of different topic models. Experiments illustrated with a corpus of 19th century American recipes, and UN General Debate speeches.
 
 ## Setups <a name="setup"></a>
 
@@ -72,5 +73,22 @@ The notebooks are provided in Google Colab. It provides a convenient way to run 
 <details><summary>To go further</summary> 
 
 - Implement the *attention mechanism* from the [*Attention is All You Need* (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762) cornerstone paper in a [Colab Notebook](https://colab.research.google.com/drive/1tm0_Usqkavr0h1Jk0f-ukcykI78xmcfW#scrollTo=tSWEk4ttUgQH) by Alexander "Sasha" Rush. Or read their detailed walkthrough post: [*The Annotated Transformer*](http://nlp.seas.harvard.edu/annotated-transformer/).
+
+</details>
+
+
+### Week 4 — 21.10 <a name="code_week4"></a>
+
+- [Tutorial_2_MyBERTopic.ipynb](./2_topic_modeling/Tutorial_2_MyBERTopic.ipynb): Implement your own (simplified) version of BERTopic and explore a corpus of 19th century recipes.
+- [Hands_on_2_CompareTM.ipynb](./2_topic_modeling/Hands_on_2_CompareTM.ipynb): Apply different topic modeling algorithms on a corpus of UN General Debate speeches transcripts from 1946 until today. Explore time and space, and try to find the best methods to decipher what is discussed during these assemblies!
+
+**Main libraries**: `sentence_transformers`, `BERTopic`, `gensim`, `pyLDAvis`, `sklearn`, `umap`, `hdbscan`
+
+<a name="code_supp_2"></a>
+<details><summary>To go further</summary> 
+
+- [Tutorial - Topic Modeling with BERTopic](https://colab.research.google.com/drive/1FieRA9fLdkQEGDIMYl0I3MCjSUKVF8C-#scrollTo=AXHLDxJdRzBi): A tutorial and overview of the different functionalities of `BERTopic` (Author unknown?).
+- [Tutorial - LDA Topic Modeling with `sklearn` and visualization with `pyLDAvis`](https://nbviewer.org/github/bmabey/pyLDAvis/blob/master/notebooks/LDA%20model.ipynb).
+- [Understanding and Using Common Similarity Measures for Text Analysis](https://doi.org/10.46430/phen0089): A detailed tutorial on computing distances on text document (using BoW-like representations) in Python, applied to data from the [EarlyPrint](https://earlyprint.org) initiative. ©John R. Ladd (2020).
 
 </details>

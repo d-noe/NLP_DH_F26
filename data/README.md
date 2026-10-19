@@ -97,7 +97,7 @@ Data from the [Living With Machines](https://livingwithmachines.ac.uk) programme
 
 ### Hands-on 4: Topic Models for the UN General Debates <a name="ungdc"></a>
 
-- File(s): [`topic_data/ungdc.csv`](./topic_data/ungdc_coarse_paragraphs.csv), [``](./topic_data/ungdc_coarse_paragraphs.csv)
+- File(s): [`topic_data/ungdc.csv`](./topic_data/ungdc_coarse_paragraphs.csv), [`topic_data/ungdc_coarse_paragraphs.csv`](./topic_data/ungdc_coarse_paragraphs.csv)
 - Description:
   - The UN General Debate Corpus (UNGDC) contains 10,952 speeches delivered by representatives from 202 countries (including historical states) during the annual UN General Assembly General Debate from 1946 to 2024. Each speech captures national perspectives on global political issues and provides a longitudinal dataset for the study of international relations, political discourse, and global affairs. An alternative version with coarse heuristic-based paragraphs split is provided as well.
   - columns: 
