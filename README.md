@@ -9,6 +9,8 @@ This repository hosts material for 6x3hours lectures in the context of the *Intr
 5. [Week 5 (04/11)](#week5)
 6. [Week 6 (18/11)](#week6)
 
+Slides are available in the [slides](./slides) folder, both in `pdf` and `html` formats. Please note that the `pdf` versions might be, at times, partially obstructed because of the animations in the original `html` format.
+
 The code and notebooks for the tutorials and hands-on sessions are provided in the [code](./code/) folder. The data used for these sessions is described and stored in [data](./data/).
 
 ## Week 1 (30/09): *Introduction* <a name="week1"></a>
@@ -64,7 +66,7 @@ The code and notebooks for the tutorials and hands-on sessions are provided in t
 
 ## Week 4 (21/10): *Discovering structure* <a name="week4"></a>
 
-- Slides: TBA
+- Slides: [preview `html`](https://rawcdn.githack.com/d-noe/NLP_DH_F26/refs/heads/main/slides/4_lecture_21_10_self_contained.html) [`pdf`](./slides/4_lecture_21_10.pdf)
 - Notebook(s): [Custom BERTopic](./code/4_topic_modeling/Tutorial_4_MyBERTopic.ipynb), [Topic Modeling UN General Debates Speeches](./code/4_topic_modeling/Hands_on_4_CompareTM.ipynb)
 - Key notions: document representation, BoW, SentenceTransformer, topic modeling, BERTopic, LDA, PMI
 
