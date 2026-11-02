@@ -92,8 +92,29 @@ The code and notebooks for the tutorials and hands-on sessions are provided in t
 ## Week 5 (04/11): *Learning Patterns* <a name="week5"></a>
 
 - Slides: TBA
-- Notebook(s): TBA
-- Key notions: TBA
+- Notebook(s): [BERT Fine-Tuning Tutorial](./code/5_supervised/Tutorial_5_SFT.ipynb), [Canonicity Prediction Challenge: Performance and Fairness](./code/5_supervised/Hands_on_5_CanonChallenge.ipynb)
+- Key notions: supervised fine-tuning, classification, performance metrics, fairness
+
+<details><summary>To go further</summary>
+
+**Text Classification for DH**
+- [(Bamman et al., 2024)](https://ceur-ws.org/Vol-3834/paper119.pdf): *On Classification with Large Language Models in Cultural Analytics*.
+- [(Lassen et al., 2024)](https://ceur-ws.org/Vol-3834/paper76.pdf): *Literary Canonicity and Algorithmic Fairness: The Effect of Author Gender on Classification Models*.
+
+**Fairness & Bias**
+- [(Solon Barocas, Moritz Hardt, Arvind Narayanan, 2023)](https://fairmlbook.org): *FAIRNESS AND MACHINE LEARNING - Limitations and Opportunities* — Full book available with additional resources.
+- [(Irving & Askell, 2019)](10.23915/distill.00014): *AI Safety Needs Social Scientists*.
+- [(Blodgett et al., 2020)](https://aclanthology.org/2020.acl-main.485/): *Language (Technology) is Power: A Critical Survey of ``Bias'' in NLP.*
+- [(Hovy & Prabhumoye)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9285808/pdf/LNC3-15-0.pdf): *Five sources of bias in natural language processing*.
+- [(Gallegos et al., 2024)](https://aclanthology.org/2024.cl-3.8.pdf): *Bias and Fairness in Large Language Models: A Survey*.
+
+**Interpretability**
+- [Interpretability Blog-post](https://blog.ml.cmu.edu/2020/08/31/6-interpretability/)
+- [(Olah et al., 2018)](10.23915/distill.00010): *The Building Blocks of Interpretability*: Mainly focusing (or applying) on computer vision, but a very nice and illustrated article on interpretability. 
+
+**Want more hands-on?** Check the [*To go further* section in code folder](./code/README.md#code_supp_5).
+
+</details>
 
 ## Week 6 (18/11): *LLMs* <a name="week6"></a>
 
