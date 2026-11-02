@@ -14,6 +14,9 @@ This folder hosts the data used in the different tutorials and hands-on sessions
     - [19th century recipes](#19threcipes)
     - [4Newsgroups](#20nwsgrps)
     - [UNGDC](#ungdc)
+- [Week 5](#data_week5)
+  - Supervised Fine Tuning: [BooksChunks](#bookschunks)
+  - Canonicity Prediction: [CanonChallenge](#canonchallenge)
 
 The [`preprocessing`](./preprocessing/) folder contains pre-processing scripts used to obtain the presented data files. It is included for transparency and to allow reproduction, but was not developed for pedagogical purposes (-> the code is likely quick and dirty).
 
@@ -104,3 +107,29 @@ Data from the [Living With Machines](https://livingwithmachines.ac.uk) programme
     - `ungdc.csv`                  : `text`, `country_iso`, `year`, `session`
     - `ungdc_coarse_paragraphs.csv`: `text`, `country_iso`, `year`, `session`, `paragraph_id`
 - Source: Jankin, S., Baturo, A., & Dasandi, N. (2024). Words to unite nations: The complete UN General Debate Corpus, 1946–present. Journal of Peace Research. DOI: [10.1177/00223433241275335](https://journals.sagepub.com/doi/10.1177/00223433241275335); [Data Repository](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/0TJX8Y).
+
+
+## Week 5 — 04.11 <a name="data_week5"></a>
+
+### Tutorial 3: Book Genre Classification <a name="bookschunks"></a>
+
+- File(s): [`literary_sft/sampled_chunks.csv`](./literary_sft/sampled_chunks.csv) | (Metadata: [`literary_sft/retained_books.csv`](./literary_sft/retained_books.csv) )
+- Description:
+  - 5-sentences excerpts from books sourced from [Project Gutenberg](https://www.gutenberg.org/). The original dataset contains nearly 6M chunks, here it is reduced to ~19.5K chunks randomly extracted from 1,000 books balanced over 4 genres (detective and mystery stories; science fiction; adventure stories; and children's stories). The data is furthered split into train, validation and test samples.
+  - Columns: 
+    - `sampled_chunks.csv`: `book_id`, `chunk_id`, `text`, `author_gender`, `label`, `split`
+    - `retained_books.csv`: `book_id`, `title`, `author`, `author_gender`, `author_birth_year`, `author_death_year`, `pg_subjects`, `topic`
+  - Note: to prevent important data leakage, there cannot be chunks from the same book in different data splits.
+- Source: *Despina Christou & Grigorios Tsoumakas. (2025). Artificial Relationships in Fiction: A Dataset for Advancing NLP in Literary Domains.  In Proceedings of the 9th Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature (LaTeCH-CLfL 2025) (pp. 130–147). Association for Computational Linguistics.* [Paper](https://aclanthology.org/2025.latechclfl-1.13/) | [Source Dataset](https://huggingface.co/datasets/Despina/project_gutenberg)
+
+### Hands-on 3: Canonicity Prediction <a name="canonchallenge"></a>
+
+- File(s): [`canon_challenge/dataset`](./canon_challenge/dataset)
+- Description:
+  - This dataset is based on the ANRChapitres Corpus: A corpus of 2031 copyright-free French-language novels published between the early XIXth to mid XXth century. It was devised as part of the [ANR Chapitres project](https://chapitres.hypotheses.org/presentation). Notably, this coprus was annotated with "canonicity" tags.
+  - The `canon` tags are affixed at the author-level. They are based on academic interests in an author's work, and determined via the number of occuerences on [fabula.org](https://www.fabula.org), an academic literature research website (see [metadata discussion](https://chapitres.hypotheses.org/1297)).
+  - The provided version is a sampled version of the original corpus, where text chunks are extracted from the book. The excerpts are five-sentence long segments extracted at the beginning of (at maximum) 10 random chapters of the books. It is further partitionned into train/validation/test splits. It is provided as an arrow-formatted dataset.
+  - Columns: `author`, `author_gender`, `book_title`, `publication_year`, `text`, `label`
+  - Note: Partition is made at the book level. The labels of the test set in [`canon_challenge/dataset`](./canon_challenge/dataset) are kept secret!
+- Source: *ANRChapitres/2000romans19e20e: Corpus Chapitres* (Leblond et al., 2023). Data Repository: [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.18914.svg)](https://doi.org/10.5281/zenodo.7446728) 
+  - For additional references, about this corpus and the 'canonicity' tag, see e.g; [*Operationalizing Canonicity* (Barré et al., 2023)](https://culturalanalytics.org/article/88113-operationalizing-canonicity-a-quantitative-study-of-french-19th-and-20th-century-literature.).
