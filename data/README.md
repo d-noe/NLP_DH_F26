@@ -111,7 +111,7 @@ Data from the [Living With Machines](https://livingwithmachines.ac.uk) programme
 
 ## Week 5 — 04.11 <a name="data_week5"></a>
 
-### Tutorial 3: Book Genre Classification <a name="bookschunks"></a>
+### Tutorial 5: Book Genre Classification <a name="bookschunks"></a>
 
 - File(s): [`literary_sft/sampled_chunks.csv`](./literary_sft/sampled_chunks.csv) | (Metadata: [`literary_sft/retained_books.csv`](./literary_sft/retained_books.csv) )
 - Description:
@@ -122,7 +122,7 @@ Data from the [Living With Machines](https://livingwithmachines.ac.uk) programme
   - Note: to prevent important data leakage, there cannot be chunks from the same book in different data splits.
 - Source: *Despina Christou & Grigorios Tsoumakas. (2025). Artificial Relationships in Fiction: A Dataset for Advancing NLP in Literary Domains.  In Proceedings of the 9th Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature (LaTeCH-CLfL 2025) (pp. 130–147). Association for Computational Linguistics.* [Paper](https://aclanthology.org/2025.latechclfl-1.13/) | [Source Dataset](https://huggingface.co/datasets/Despina/project_gutenberg)
 
-### Hands-on 3: Canonicity Prediction <a name="canonchallenge"></a>
+### Hands-on 5: Canonicity Prediction <a name="canonchallenge"></a>
 
 - File(s): [`canon_challenge/dataset`](./canon_challenge/dataset)
 - Description:
