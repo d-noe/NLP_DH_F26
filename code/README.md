@@ -7,6 +7,7 @@ This folder hosts the notebooks and code (in Python) used in the different tutor
 - [Week 2](#code_week2): 1. Tokenization tutorial (including off-the-shelf tokenizers overview, BPE implementation from scratch, and visualising Zipf's law from real-world data), and 2. Hands-on study of semantic shifts in 19th century British newspapers using word2vec embeddings.
 - [Week 3](#code_week3): Familiarization with BERT-like models, using `transformers` package. Generation of embedding vectors and visualization; applications on word sense disambiguation, and semantic shifts exploration. Guided lab for BERT-based NER.
 - [Week 4](#code_week4): Topic Modeling: follow a step-by-step implementation of a (simplified) version of BERTopic relying on `sentence_transformers` model representations and compare the output of different topic models. Experiments illustrated with a corpus of 19th century American recipes, and UN General Debate speeches.
+- [Week 5](#code_week5): Supervised Learning: Tutorial of BERT-like model fine-tuning applied to book genre prediction (compared with document representation-based baselines). Hands-on applied to "literary canon" prediction: design your own classifier and reflect on fairness issues in ML.
 
 ## Setups <a name="setup"></a>
 
@@ -90,5 +91,21 @@ The notebooks are provided in Google Colab. It provides a convenient way to run 
 - [Tutorial - Topic Modeling with BERTopic](https://colab.research.google.com/drive/1FieRA9fLdkQEGDIMYl0I3MCjSUKVF8C-#scrollTo=AXHLDxJdRzBi): A tutorial and overview of the different functionalities of `BERTopic` (Author unknown?).
 - [Tutorial - LDA Topic Modeling with `sklearn` and visualization with `pyLDAvis`](https://nbviewer.org/github/bmabey/pyLDAvis/blob/master/notebooks/LDA%20model.ipynb).
 - [Understanding and Using Common Similarity Measures for Text Analysis](https://doi.org/10.46430/phen0089): A detailed tutorial on computing distances on text document (using BoW-like representations) in Python, applied to data from the [EarlyPrint](https://earlyprint.org) initiative. ©John R. Ladd (2020).
+
+</details>
+
+### Week 5 — 04.11 <a name="code_week5"></a>
+
+- [Tutorial_5_SFT.ipynb](./5_supervised/Tutorial_5_SFT.ipynb): Fine-tune a BERT-like model for literary genre classification based on 5-sentences long book chunks. Compare the results with classification performed by standard classifiers trained on document representations (BoW, TF-IDF, SentenceTransformers' embeddings).
+- [Hands_on_5_CanonChallenge.ipyng]: TBD
+
+**Main libraries**: `transformers`, `pytorch`, `sklearn`
+
+<a name="code_supp_5"></a>
+<details><summary>To go further</summary> 
+
+- [Tutorial: Fine-tuning ](https://colab.research.google.com/github/huggingface/cookbook/blob/main/notebooks/en/fine_tuning_code_llm_on_single_gpu.ipynb): *Fine-tuning a Code LLM on Custom Code on a single GPU*, by Maria Khalusova.
+- Tutorial: Interpreting BERT's classification decisions: *Interpreting the Prediction of BERT Model for Text Classification*, by Ruben Winastwan. ([Blog post](https://towardsdatascience.com/interpreting-the-prediction-of-bert-model-for-text-classification-5ab09f8ef074/) | [Notebook](https://github.com/mrubenw/medium-resources/blob/main/BERT_Captum/Bert_captum.ipynb))
+- [Fairness with the `dalex` Python Package](https://dalex.drwhy.ai/python-dalex-fairness.html).
 
 </details>
