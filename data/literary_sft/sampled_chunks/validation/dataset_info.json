@@ -1,0 +1,90 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "fiction_books_in_chunks",
+  "dataset_name": "project_gutenberg",
+  "dataset_size": 4676749003,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/Despina/project_gutenberg@e0b8c8059cf889d199b0a2231635d2ff25f06019/fiction_books_in_chunks/train-00000-of-00005.parquet": {
+      "num_bytes": 328194471,
+      "checksum": null
+    },
+    "hf://datasets/Despina/project_gutenberg@e0b8c8059cf889d199b0a2231635d2ff25f06019/fiction_books_in_chunks/train-00001-of-00005.parquet": {
+      "num_bytes": 324441065,
+      "checksum": null
+    },
+    "hf://datasets/Despina/project_gutenberg@e0b8c8059cf889d199b0a2231635d2ff25f06019/fiction_books_in_chunks/train-00002-of-00005.parquet": {
+      "num_bytes": 326282359,
+      "checksum": null
+    },
+    "hf://datasets/Despina/project_gutenberg@e0b8c8059cf889d199b0a2231635d2ff25f06019/fiction_books_in_chunks/train-00003-of-00005.parquet": {
+      "num_bytes": 325568414,
+      "checksum": null
+    },
+    "hf://datasets/Despina/project_gutenberg@e0b8c8059cf889d199b0a2231635d2ff25f06019/fiction_books_in_chunks/train-00004-of-00005.parquet": {
+      "num_bytes": 326771278,
+      "checksum": null
+    }
+  },
+  "download_size": 1631257587,
+  "features": {
+    "book_id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "chunk_id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "author_gender": {
+      "names": [
+        "female",
+        "male"
+      ],
+      "_type": "ClassLabel"
+    },
+    "label": {
+      "names": [
+        "adventure stories",
+        "children's stories",
+        "detective and mystery stories",
+        "science fiction"
+      ],
+      "_type": "ClassLabel"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 6308006590,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 4676749003,
+      "num_examples": 5961303,
+      "shard_lengths": [
+        630000,
+        632261,
+        643000,
+        638261,
+        638000,
+        633261,
+        642000,
+        641260,
+        647000,
+        216260
+      ],
+      "dataset_name": "project_gutenberg"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
