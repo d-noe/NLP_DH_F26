@@ -1,0 +1,38 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "author": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "author_gender": {
+      "names": [
+        "female",
+        "male"
+      ],
+      "_type": "ClassLabel"
+    },
+    "book_title": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "publication_year": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "label": {
+      "names": [
+        "canon",
+        "non-canon"
+      ],
+      "_type": "ClassLabel"
+    },
+    "text": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}
