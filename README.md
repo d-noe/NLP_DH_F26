@@ -91,7 +91,7 @@ The code and notebooks for the tutorials and hands-on sessions are provided in t
 
 ## Week 5 (04/11): *Learning Patterns* <a name="week5"></a>
 
-- Slides: TBA
+- Slides: [preview `html`](https://rawcdn.githack.com/d-noe/NLP_DH_F26/refs/heads/main/slides/5_lecture_04_11_self_contained.html) [`pdf`](./slides/5_lecture_05_11.pdf)
 - Notebook(s): [BERT Fine-Tuning Tutorial](./code/5_supervised/Tutorial_5_SFT.ipynb), [Canonicity Prediction Challenge: Performance and Fairness](./code/5_supervised/Hands_on_5_CanonChallenge.ipynb)
 - Key notions: supervised fine-tuning, classification, performance metrics, fairness
 
