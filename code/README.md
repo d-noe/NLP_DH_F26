@@ -124,12 +124,13 @@ The notebooks are provided in Google Colab. It provides a convenient way to run 
 **Revisit previous sessions with LLMs!**
 - [Week_1](#code_week1): 
     - Re-annotate the data with an LLM and observe potential differences, measure aggreement with humans with κ index
+- [Week_3](#code_week3)
     - Extract features from a generative LLM instead of BERT
     - Improve the OCRed text via prompting LLMs (& find methods to evaluate improvement)
-- [Week_2](#code_week2): 
+- [Week_4](#code_week4): 
     - Add a LLM-based component to summarize topics or provide more meaningful topic labels
     - Replace the document embedder of BERTopic with features extracted from a LLM
-- [Week_3](#code_week3): 
+- [Week_5](#code_week5): 
     - Prompt LLMs to do zero-/few- shot classification (try diverse prompts, number of examples, etc.)
         - of book genres
         - or canonicity (upload your predictions on the Shared Task app!)
