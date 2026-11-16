@@ -8,6 +8,7 @@ This folder hosts the notebooks and code (in Python) used in the different tutor
 - [Week 3](#code_week3): Familiarization with BERT-like models, using `transformers` package. Generation of embedding vectors and visualization; applications on word sense disambiguation, and semantic shifts exploration. Guided lab for BERT-based NER.
 - [Week 4](#code_week4): Topic Modeling: follow a step-by-step implementation of a (simplified) version of BERTopic relying on `sentence_transformers` model representations and compare the output of different topic models. Experiments illustrated with a corpus of 19th century American recipes, and UN General Debate speeches.
 - [Week 5](#code_week5): Supervised Learning: Tutorial of BERT-like model fine-tuning applied to book genre prediction (compared with document representation-based baselines). Hands-on applied to "literary canon" prediction: design your own classifier and reflect on fairness issues in ML.
+- [Week 6](#code_week6): Generative LLMs interactions: Tutorial on how to interact with LLMs (via diverse APIs), and hands-on session on devising a questionnaire to assess LLMs behaviors.
 
 ## Setups <a name="setup"></a>
 
@@ -107,5 +108,34 @@ The notebooks are provided in Google Colab. It provides a convenient way to run 
 - [Tutorial: Fine-tuning ](https://colab.research.google.com/github/huggingface/cookbook/blob/main/notebooks/en/fine_tuning_code_llm_on_single_gpu.ipynb): *Fine-tuning a Code LLM on Custom Code on a single GPU*, by Maria Khalusova.
 - Tutorial: Interpreting BERT's classification decisions: *Interpreting the Prediction of BERT Model for Text Classification*, by Ruben Winastwan. ([Blog post](https://towardsdatascience.com/interpreting-the-prediction-of-bert-model-for-text-classification-5ab09f8ef074/) | [Notebook](https://github.com/mrubenw/medium-resources/blob/main/BERT_Captum/Bert_captum.ipynb))
 - [Fairness with the `dalex` Python Package](https://dalex.drwhy.ai/python-dalex-fairness.html).
+
+</details>
+
+### Week 6 — 18.11 <a name="code_week6"></a>
+
+- [Tutorial_6_LLM_Interaction.ipynb](./6_llms/Tutorial_6_LLM_Interaction.ipynb): Learn how to use open-weight LLM via the `transformers` library, run and query LLMs locally with `ollama`, or interact with diverse providers through APIs and requests.
+- [Hands_on_6_EvalLLM.ipynb](./6_llms/Hands_on_6_EvalLLM.ipynb): Write a multiple choice questionnaire and apply it to LLMs.
+
+**Main libraries**: `transformers`, `ollama`, `openai`, `requests`
+
+<a name="code_supp_6"></a>
+<details><summary>To go further</summary>
+
+**Revisit previous sessions with LLMs!**
+- [Week_1](#code_week1): 
+    - Re-annotate the data with an LLM and observe potential differences, measure aggreement with humans with κ index
+    - Extract features from a generative LLM instead of BERT
+    - Improve the OCRed text via prompting LLMs (& find methods to evaluate improvement)
+- [Week_2](#code_week2): 
+    - Add a LLM-based component to summarize topics or provide more meaningful topic labels
+    - Replace the document embedder of BERTopic with features extracted from a LLM
+- [Week_3](#code_week3): 
+    - Prompt LLMs to do zero-/few- shot classification (try diverse prompts, number of examples, etc.)
+        - of book genres
+        - or canonicity (upload your predictions on the Shared Task app!)
+
+- [Glimpse at Data Curation for LLM training](https://colab.research.google.com/drive/1EhHV3wZEjCltcm4idXdX1TnmEgdV1QhG?usp=sharing): Colab notebook to explore data curation process: language identification & quality filtering, by Rose E Wang.
+- [Interrogating a National Narrative with GPT-2](https://programminghistorian.org/en/lessons/interrogating-national-narrative-gpt): Using Generated Texts to Interrogate the *Brexit* Narrative (Lesson), by Chantal Brousseau.
+- [Text Classification using LLMs](https://github.com/skorch-dev/skorch/blob/master/notebooks/LLM_Classifier.ipynb): Using the `skorch` library for zero-shot classification with LLMs.
 
 </details>
