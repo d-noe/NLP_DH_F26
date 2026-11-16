@@ -2,12 +2,12 @@
 
 This repository hosts material for 6x3hours lectures in the context of the *Introduction to Natural Language Processing (NLP)* class from PSL's Master of Digital Humanities, Fall 2026.
 
-1. [Week 1 (30/09)](#week1)
-2. [Week 2 (07/10)](#week2)
-3. [Week 3 (14/10)](#week3)
-4. [Week 4 (21/10)](#week4)
-5. [Week 5 (04/11)](#week5)
-6. [Week 6 (18/11)](#week6)
+1. [Week 1 (30/09)](#week1) - *Introduction*
+2. [Week 2 (07/10)](#week2) - *Word Representation*
+3. [Week 3 (14/10)](#week3) - *Language Modeling*
+4. [Week 4 (21/10)](#week4) - *Discovering structure*
+5. [Week 5 (04/11)](#week5) - *Learning patterns*
+6. [Week 6 (18/11)](#week6) - *Large Language Models*
 
 Slides are available in the [slides](./slides) folder, both in `pdf` and `html` formats. Please note that the `pdf` versions might be, at times, partially obstructed because of the animations in the original `html` format.
 
@@ -116,8 +116,21 @@ The code and notebooks for the tutorials and hands-on sessions are provided in t
 
 </details>
 
-## Week 6 (18/11): *LLMs* <a name="week6"></a>
+## Week 6 (18/11): *Large Language Models* <a name="week6"></a>
 
-- Slides: TBA
-- Notebook(s): TBA
-- Key notions: TBA
+- Slides: [preview `html`](https://rawcdn.githack.com/d-noe/NLP_DH_F26/refs/heads/main/slides/6_lecture_18_11_self_contained.html), [`pdf`](./slides/6_lecture_18_11.pdf)
+- Notebook(s): [Tutorial_6_LLM_Interaction.ipynb](./code/6_llms/Tutorial_4_LLM_Interaction.ipynb); [Hands_on_6_EvalLLM.ipynb](./code/6_llms/Hands_on_4_EvalLLM.ipynb)
+- Key notions: LLMs, autoregressive, pre-training, alignment, evaluation
+
+<details><summary>To go further</summary>
+
+**LLMs**:
+- [(Cho et al., 2024)](https://poloclub.github.io/transformer-explainer/): Interactive visualisation, with explanations, of the inner working of causal language models. Very nice visualisation and summary of transformer-based LMs! 👀 If you like these visualisation, check also the [*LLM Visualization*](https://bbycroft.net/llm) by Brendan Bycroft.
+- [(Zhao et al., 2023)](https://arxiv.org/abs/2303.18223): *A Survey of Large Language Models*. — Comprehensive review of recent advances related to LLMs, background, key findings, mainstream techniques, etc.
+
+**LLMs, Biases and Fairness**
+- [(Gallegos et al., 2025)](https://direct.mit.edu/coli/article/50/3/1097/121961/Bias-and-Fairness-in-Large-Language-Models-A): *Bias and Fairness in Large Language Models: A Survey*
+
+**Want more hands-on?** Check the [*To go further* section in code folder](./code/README.md#code_supp_6).
+
+</details>
